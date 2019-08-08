@@ -2,69 +2,77 @@
 <html>
   <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Crystal Collector Game</title>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="shortcut icon" type="image/ico" href="assets/images/crystal_favicon.png"> <!--Favicon-->
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
+
   <body>
   <div class="body">
     <div class="jumbotron">
-        <h1 class="display-4"><u>Crystal Collector</u></h1>
-          <hr class="my-4">
-            <div>
-                <ul class="lead" id="instructions"> <li>You will be given a random number at the start of the game.</li> 
-                <br>
-                <li>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</li>
-                <br>
-                <li>You win the fame by matching your total score to the random number, you lose the game if your total score goes above the random number.</li>
-                <br>
-                <li>The value of each crystal is hidden from you until you click on it.</li>
-                <br>
-                <li>Each time the game starts, the game will change the values of each crystal and give you a new random number to match.</li>
-                </ul>
-            </div>
-      </div>
-
-      <div class="card text-white bg-info mb-3" id="scoreCard" style="max-width: 18rem; height: 200px">
-            <div class="card-header">Score</div>
-            <div class="card-body">
-                <h5 class="card-title" id="wins">Wins: </h5>
-                <br>
-                <h5 class="card-title" id="losses">Losses: </h5>
-            </div>
+      <h1 class="display-4"><u>Crystal Collector</u></h1>
+        <hr class="my-4">
+          <div>
+            <ul class="lead" id="instructions"> <li>You will be given a random number at the start of the game.</li> 
+              <br>
+            <li>There are four crystals to the right. By clicking on a crystal you will add a specific amount of points to your total score.</li>
+              <br>
+            <li>You win the game by matching your total score to the Number to Match; you lose the game if your total score goes above the Number to Match. </li>
+              <br>
+            <li>The value of each crystal is hidden from you until you click on it.</li>
+              <br>
+            <li>Each time the game starts, the game will change the values of each crystal and give you a new random number to match.</li>
+            </ul>
           </div>
+    </div>
 
-      <div class="card text-white bg-dark mb-3" id="randomNumCard" style="max-width: 18rem; height: 200px">
-        <div class="card-header">Number to Match This Round</div>
+    <div class="card text-white bg-info mb-3" id="scoreCard" style="max-width: 18rem; height: 200px">
+      <div class="card-header">Score</div>
         <div class="card-body">
-          <h1 class="card-title" id="randomNum">30</h1>
+          <h5 class="card-title" id="wins">Wins: 0</h5>
+            <br>
+          <h5 class="card-title" id="losses">Losses: 0</h5>
         </div>
-      </div>
+    </div>
 
-      <div class="card text-white bg-dark mb-3" id="currentNumCard" style="max-width: 18rem; height: 200px">
-            <div class="card-header">Current Total This Round</div>
-            <div class="card-body">
-              <h1 class="card-title" id="currentNum">30</h1>
-            </div>
-      </div>
+    <div class="card text-white bg-dark mb-3" id="randomNumCard" style="max-width: 18rem; height: 200px">
+      <div class="card-header">Number to Match This Round</div>
+        <div class="card-body">
+          <h1 class="card-title" id="randomNum"></h1>
+        </div>
+    </div>
 
-      <button id="pinkBtn">
+    <div class="card text-white bg-dark mb-3" id="currentNumCard" style="max-width: 18rem; height: 200px">
+      <div class="card-header">Current Total This Round</div>
+        <div class="card-body">
+          <h1 class="card-title" id="currentNum">0</h1>
+        </div>
+    </div>
+
+    <button id="pinkBtn">
       <img id="pinkCrystal" src="../unit-4-game/assets/images/pink.jpeg" alt="Pink Crystal">
-      </button>
-      <button id="greenBtn">
+    </button>
+    <button id="greenBtn">
       <img id="greenCrystal" src="../unit-4-game/assets/images/green.jpg" alt="Green Crystal">
-      </button>
-      <button id="whiteBtn">
+    </button>
+    <button id="whiteBtn">
       <img id="whiteCrystal" src="../unit-4-game/assets/images/white.jpg" alt="White Crystal">
-      </button>
-      <button id="turqBtn">
+    </button>
+    <button id="turqBtn">
       <img id="turqCrystal" src="../unit-4-game/assets/images/turquoise.jpg" alt="Turquoise Crystal">
-      </button>
+    </button>
      
 
   </div>
-    <script type="text/javascript" src="assets/javascript/game.js"> </script>
+  <script type="text/javascript" src="assets/javascript/game.js"> </script>
   </body>
 </html>
