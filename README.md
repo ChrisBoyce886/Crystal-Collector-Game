@@ -4,7 +4,7 @@ This game is my Unit 4 homework submission for UNC Charlotte's Coding Bootcamp.
 
 The objective of this assignment was to build an interactive game in which the HTML is dynamically updated using the jQuery library.
 
-Click [here]( https://chrisboyce886.github.io/unit-4-game/) to play the game. 
+Click [here]( https://chrisboyce886.github.io/Crystal-Collector-Game/) to play the game. 
 
 ## How to Play
 * You will be given a random number at the start of the game.              
